@@ -1,0 +1,176 @@
+/*Navbar*/
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 40px;
+}
+
+.navbar-brand{
+    background-color:rgb(60, 69, 78);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 40px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.377);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(95, 91, 91, 0.2);
+    padding: 10px 10px;
+    z-index: 1;
+    margin-top: 0; /*To remove the miniscule space between the menu and the menu element*/
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {
+    background-color: lightgray
+}
+/*Font color of dropdown menu on smaller screens*/
+.dropdown-menu a{
+    color: white;
+}
+
+/*On larger screens*/
+@media only screen and (min-width:991px){
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    } 
+
+    .dropdown-menu{
+        background-color: #f9f9f9;
+    }
+
+    .dropdown-menu a{
+        color: black;
+    }
+}
+
+
+/*Add transparent border to prevent the images on landing page from changing size on hover*/
+.figure-img.menu{
+    width:100%;
+    border-color: #eee;
+    border: 1px solid transparent;
+}
+/*Add a colored border to images on landing page on hover*/
+.figure-img.menu:hover {
+    border: 1px solid;
+    border-color:rgb(1, 56, 129);
+}
+/*Add a colored border to visualization image when on its page*/
+.figure-img.active{
+    border: 2px solid;
+    border-color: #DBE1EA;
+}
+/*Customize the text of the caption*/
+.figure-caption{
+    font-size: 14.5px;
+    color: rgb(1, 56, 129);
+}
+/*Specify parameters of images on the comparison page*/
+.comparison{
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
+
+/*Create a scrollable table on the "Data" page*/
+.tableFixHead{
+    overflow-y: auto; 
+    height: 600px;
+}
+/*Fix the first row of the table on "Data"*/
+.tableFixHead thead th{
+    position: sticky; 
+    top: 0; 
+}
+
+
+/*Specify parameters for the container*/
+.container-fluid{
+    width: 90%;
+    padding: 30px;
+}
+
+/*Add a background color and padding to the md columns*/
+.col-md-12, .col-md-6{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*Specify parameters for headings*/
+h1, h3{
+    padding-left: 1%;
+    color: rgb(4, 37, 80);
+    
+}
+
+h2{
+    text-align: center;
+    color: rgba(1, 56, 129, 0.733);
+}
+
+/*Add background color to body*/
+body{
+    background-color:rgba(187, 187, 187, 0.315);
+}
+
+/*Customize text in a paragraph*/
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-left: 1%;
+}
+
+/*Specify parameters for images centered*/
+img.center {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height:auto;
+}
+
+/*Add min-height calculation in section for footer positioning*/
+section {
+    min-height: calc(100vh - 109px); /* 100vh (100% of height) minus div heights*/
+}
+/*Specify footer parameters*/
+footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    background-color:lightslategray;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: lightblue;
+    border-top-width: 5px;
+
+}
+
+/*To prevent image on landing page from breaking out of div*/
+/*Code consulted: https://www.sitepoint.com/community/t/images-breaking-out-of-div/1868/11*/
+.property {
+    background-color: #DBE1EA;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: thin solid #6699CC;
+    clear: left;
+} 
+.clearer{
+height:1px;
+overflow:hidden;
+margin-top:-1px;
+clear: left;
+}
+
